@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to reverse a given string. </p>
+<p id="Q1"></p>
+<script>
+function reverseString(str) {
+
+    
+    let revString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        revString += str[i];
+    }
+    return revString;
+}
+
+const string = prompt('Enter a string: ');
+
+const result = reverseString(string);
+console.log(result);
+document.getElementById("Q1").innerHTML = result;
+</script>
+
+</body>
+</html> 

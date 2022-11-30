@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to replace all the numbers with a specified number of a given 
+array of integers.</p>
+
+<p id="Q17"></p>
+
+<script>
+function array_element_replace(arr, old_value, new_value) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === old_value) {
+      arr[i] = new_value;
+    }
+  }
+  return arr;
+}
+document.getElementById("Q17").innerHTML = array_element_replace([1, 2, 3, 2, 2, 8, 1, 9],2,5);
+
+</script>
+</body>
+</html> 

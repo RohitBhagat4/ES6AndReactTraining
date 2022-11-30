@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a 
+given original string. The length of the given string must be 3 and above</p>
+
+<p id="Q11"></p>
+
+<script>
+function string_copies (str, n) 
+{
+  if (n < 0)
+    return false;
+  else
+  return str.repeat(n);
+}
+document.getElementById("Q11").innerHTML = string_copies("rdb",6);
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to count the number of vowels in a given string.</p>
+
+<p id="Q7"></p>
+
+<script>
+function vowel_Count(str)
+{ 
+
+  return str.replace(/[^aeiou]/g, "").length; 
+}
+document.getElementById("Q7").innerHTML = vowel_Count("abeeb");
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> Write a JavaScript program to extract the first half of a string of even length.</p>
+
+<p id="Q12"></p>
+
+<script>
+function newstring(str)
+{
+  if (str.length >= 3) {
+    result_str = str.substring(str.length - 3);
+    return result_str + result_str + result_str + result_str;
+  }
+  else
+    return false;
+}
+document.getElementById("Q12").innerHTML = newstring("rohit");
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to divide two positive numbers and return a string with properly 
+formatted commas. </p>
+
+<p id="Q9"></p>
+
+<script>
+function division_string(n1, n2) {
+  
+
+var div = Math.round(n1 / n2).toString(),
+result_array = div.split("");
+
+if (div >= 1000)
+{
+for (var i = div.length - 3; i > 0; i -= 3) 
+{
+result_array.splice(i, 0, ",");
+}
+return result_array;
+}
+document.getElementById("Q9").innerHTML = division_string(80,6);
+
+</script>
+</body>
+</html> 

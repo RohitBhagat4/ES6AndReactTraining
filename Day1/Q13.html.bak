@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to create a new string without the first and last character of a 
+given string</p>
+
+<p id="Q13"></p>
+
+<script>
+function first_half (str) {
+  if (str.length % 2 == 0) {
+    return str.slice(0, str.length / 2);
+  }
+  return str;
+}
+document.getElementById("Q13").innerHTML = first_half("bhagat");
+
+</script>
+</body>
+</html> 

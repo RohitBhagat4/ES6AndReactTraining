@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to replace every character in a given string with the character 
+following it in the alphabet. </p>
+
+<p id="Q2.1"></p>
+<p id="Q2.2"></p>
+<p id="Q2.3"></p>
+
+<script>
+function LetterChanges(text) {
+    var s = text.split('');
+    for (var i = 0; i < s.length; i++) {
+       
+        switch(s[i]) {
+          case ' ':
+            break;
+          case 'z':
+            s[i] = 'a';
+            break;
+          case 'Z':     
+            s[i] = 'A';
+            break;
+          default:
+            s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+        }
+
+    }
+    return s.join('');
+}
+document.getElementById("Q2.1").innerHTML = LetterChanges("Rohit");
+document.getElementById("Q2.2").innerHTML = LetterChanges("tushar");
+document.getElementById("Q2.3").innerHTML = LetterChanges("bhagat");
+</script>
+
+</body>
+</html> 

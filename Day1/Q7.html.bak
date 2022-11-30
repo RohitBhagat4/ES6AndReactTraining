@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to count the number of vowels in a given string.</p>
+
+<p id="Q7"></p>
+
+<script>
+function ab_Check(str)
+ {
+    return (/a...b/).test(str) || (/b...a/).test(str);
+ }
+document.getElementById("Q7").innerHTML = ab_Check("abeeb");
+
+</script>
+</body>
+</html> 

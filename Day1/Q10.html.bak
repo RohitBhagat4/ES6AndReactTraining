@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to divide two positive numbers and return a string with properly 
+formatted commas. </p>
+
+<p id="Q10"></p>
+
+<script>
+function string_copies (str, n) 
+{
+  if (n < 0)
+    return false;
+  else
+  return str.repeat(n);
+}
+document.getElementById("Q10").innerHTML = string_copies("rdb",6);
+
+</script>
+</body>
+</html> 
