@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Create an arrow function by which you have to find out average of given N numbers.</p>
+
+<p id="Q3"></p>
+
+<script>
+var numbers = [4, 5, 9, 6, 6, 6];
+var avg = num=> num.reduce((a, b) => a + b, 0) / num.length;
+document.getElementById("Q3").innerHTML = avg(numbers);
+
+</script>
+
+</body>
+</html> 

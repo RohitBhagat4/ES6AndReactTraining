@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Create an arrow function by which will take multiple strings and you have print each 
+string along with length of each string.</p>
+
+<p id="Q2"></p>
+
+<script>
+var emp_name = [
+	  "Rohit Bhagat",
+	  "Tushar Bhagat",
+	  "Pooja Bhagat",
+	  "D R Bhagat",
+	  "Usha Bhagat"
+	];
+
+document.writeln("emp_name :" + emp_name);
+var arrow_ans = emp_name =>emp_name.map( n => n.length );
+document.getElementById("Q2").innerHTML = arrow_ans(emp_name);
+
+</script>
+
+</body>
+</html> 

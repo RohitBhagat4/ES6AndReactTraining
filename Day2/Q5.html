@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Create an arrow function by which you will take input of string and you check given 
+string is palindrome or not.</p>
+
+<p id="Q5"></p>
+
+<script>
+const str = prompt('Enter a string: ');
+var check = str =>{
+
+const len = str.length;
+
+    for (let i = 0; i < len / 2; i++) {
+
+        if (str[i] !== str[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+
+document.getElementById("Q5").innerHTML = check(str);
+
+</script>
+
+</body>
+</html> 
